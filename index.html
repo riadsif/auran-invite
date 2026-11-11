@@ -3,29 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- عنوان الإمبيد -->
-    <meta property="og:title" content="مملكة اوران 👑">
-    
-    <!-- محتوى الوصف (النصوص والرموز من JSON) -->
-    <meta property="og:description" content="مجتمع سيادي يدمج عالم الأنمي وتجارب الـ Roleplay بطابع ملكي رصين. بيئة راقية تزدهر فيها جودة النقاش وروح التميّز.&#10;&#10;السيادة 👑 • الهيبة 🌟 • الرقي ✨ • الأنمي 🔥">
-    
-    <!-- لون الشريط الجانبي للإمبيد (#9d0202) -->
-    <meta name="theme-color" content="#9d0202">
-    
-    <!-- الصورة الأولى (رابط CDN ديسكورد المحدد) -->
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1565239072354603008/1565239190130659461/1793252234947.jpg?ex=6af5fa57&is=6af4a8d7&hm=d201a9feedbc92c87e0a733e7c17af49c40779475ca7a713a8b14e8a173bdd9c&">
-    
-    <!-- جعل البطاقة عريضة لتشبه Component Embeds -->
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <!-- عنوان الصفحة في المتصفح -->
     <title>مملكة اوران 👑</title>
+
+    <!-- 1. وسوم الـ Open Graph الإلزامية كاحتياط (Fallback) إذا فشل قراءة المكونات -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="مملكة اوران 👑">
+    <meta property="og:description" content="مجتمع سيادي يدمج عالم الأنمي وتجارب الـ Roleplay بطابع ملكي رصين.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1565239072354603008/1565239190130659461/1793252234947.jpg">
+    <meta name="theme-color" content="#9d0202">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- 2. حمولة Component Embeds (V2) المطلوبة من ديسكورد داخل ملف الـ HTML -->
+    <script type="application/json" id="discord-component-embed">
+    {
+      "component": {
+        "type": 17,
+        "accent_color": 10289666,
+        "components": [
+          {
+            "type": 12,
+            "items": [
+              {
+                "media": {
+                  "url": "https://cdn.discordapp.com/attachments/1565239072354603008/1565239190130659461/1793252234947.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": 12,
+            "items": [
+              {
+                "media": {
+                  "url": "https://cdn.discordapp.com/attachments/1565239072354603008/1568154483949830257/1793947534532.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": 10,
+            "content": "## مملكة اوران \n>  **مجتمع سيادي يدمج عالم الأنمي وتجارب الـ Roleplay بطابع ملكي رصين. بيئة راقية تزدهر فيها جودة النقاش وروح التميّز.**\n\n**السيادة 👑 • الهيبة 🌟 • الرقي ✨ • الأنمي 🔥**"
+          },
+          {
+            "type": 1,
+            "components": [
+              {
+                "type": 2,
+                "style": 5,
+                "label": "انضم الينا هنا",
+                "emoji": {
+                  "name": "👑",
+                  "animated": false
+                },
+                "url": "https://discord.gg/qfawHAgbeH"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- التوجيه الفوري للزائر عند الضغط على الرابط الحقيقي -->
+    <script>
+        window.location.replace("https://discord.gg/qfawHAgbeH");
+    </script>
 </head>
 <body>
-    <!-- توجيه الزائر تلقائياً عند فتح الرابط الحقيقي إلى سيرفر ديسكورد -->
-    <script>
-        window.location.href = "https://discord.gg/qfawHAgbeH";
-    </script>
 </body>
 </html>
